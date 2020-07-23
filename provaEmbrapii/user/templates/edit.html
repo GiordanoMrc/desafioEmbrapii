@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'boot/css/style.css' %}"/>
+</head>
+<body>
+<form method="POST" class="post-form" action="/update/{{user.id}}">
+        {% csrf_token %}
+    <div class="container">
+<br>
+    <div class="form-group row">
+    <label class="col-sm-1 col-form-label"></label>
+    <div class="col-sm-4">
+    <h3>Update Details</h3>
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-label">User Id:</label>
+    <div class="col-sm-4">
+        <input type="text" name="uid" id="id_uid" required maxlength="20" value="{{ user.uid }}"/>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Nome:</label>
+    <div class="col-sm-4">
+        <input type="text" name="uname" id="id_uname" required maxlength="100" value="{{ user.uname }}" />
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Data de Nascimento</label>
+    <div class="col-sm-4">
+        <input type="text" name="unasc" id="id_unasc" required maxlength="100" value="{{ user.unasc }}" />
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Tipo de Teste</label>
+    <div class="col-sm-4">
+        <input type="text" name="uteste" id="id_uteste" required maxlength="15" value="{{ user.uteste }}" />
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Resultado Positivo?</label>
+    <div class="col-sm-4">
+        <input type="text" name="uresultado" id="id_uresultado" required maxlength="15" value="{{ user.uresultado }}" />
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-1 col-form-label"></label>
+    <div class="col-sm-4">
+    <button type="submit" class="btn btn-success">Update</button>
+    </div>
+  </div>
+    </div>
+</form>
+</body>
+</html>
