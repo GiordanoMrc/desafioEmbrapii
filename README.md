@@ -4,10 +4,11 @@ Prova para desenvolvimento em Python e Django de um WebApp que coleta informaç�
 
 ## Execução
 
+> pipenv shell
 > python manage.py runserver
 
 Dentro da pasta provaEmbrapii
 
 ## Bugs
 
-Validação dos dados recebidos no cadastramento ainda não correta!
+Data ainda não funcionando corretamente.
