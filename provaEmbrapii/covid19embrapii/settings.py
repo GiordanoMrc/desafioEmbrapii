@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'covid19embrapii.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME':'djangodb2',
+        'NAME':'djangodb',
     }
 }
 
@@ -121,9 +121,3 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'boot')
-
-STATICFILES_DIR = [
- os.path.join(BASE_DIR, 'static'),
- os.path.join(BASE_DIR, 'boot'),
-]
