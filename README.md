@@ -5,6 +5,7 @@ Prova para desenvolvimento em Python e Django de um WebApp que coleta informaç�
 ## Execução
 
 > pipenv shell
+
 > python manage.py runserver
 
 Dentro da pasta provaEmbrapii
