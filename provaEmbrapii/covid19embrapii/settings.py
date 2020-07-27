@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'covid19embrapii.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME':'djangodb',
+        'NAME':'db',
     }
 }
 
